@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Seven Seas Shipping</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="responsive-bypass">
+		<p>Please access the site in desktop mode</p>
+	</div>
+	<header class="header">
+		<div class="navigation">
+			<div class="nav-content">
+				<div class="logo-box">
+					<img src="img/logo_nav.png" alt="Logo">
+					<p>Seven Seas Shipping USA Inc</p>
+				</div>
+				<div class="nav-menu">
+					<div class="menu-item"><a href="index.html">Home</a></div>
+					<div class="menu-item"><a href="services.html">Services</a></div>
+					<div class="menu-item"><a href="about.html">About Us</a></div>
+					<div class="menu-item"><a href="get-started.html">Get Started</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="hero-text-box">
+			<p class="hero-text">Taking your <span class="cargo">cargo</span> to new places</p>
+			<p class="hero-text-sub">A Unique Service Offering Speed and Reliability</p>
+			<div class="buttons">
+				<button class="track-shipment"><a href="#track">Track Shipment</a></button>
+				<button class="get-started"><a href="get-started.html">Get Started</a></button>	
+			</div>
+		</div>
+	</header>
+
+	<section class="main">
+		<div class="container">
+			<div class="company-info">
+				<h3 class="company-info-header">Seven Sea Shipping USA Inc</h3>
+			</div>
+			<hr>
+			<p class="company-info-founded">Founded in 2008, Seven Seas Shipping USA, Inc. is a global leader in providing logistics and freight management solutions for importers and exporters worldwide. As a Non-Vessel Operating Common Carrier (NVOCC) and Ocean Freight Consolidator, we are committed to delivering the highest level of customer service and support.</p>
+			<div class="company-info-under">
+				<div class="company-info-under-sea company-info-width">
+					<div class="info-icon">
+						<i class="fa fa-ship fa-4x" aria-hidden="true"></i>
+					</div>
+					<h5 class="company-info-heading">Sea</h5>
+					<p class="company-info-under-description">Being a Global Forwarder, we provide flexible and strategic freight forwarding plans that are specific to the needs of each of our customers.</p>
+				</div>
+				<div class="company-info-under-government company-info-width">
+					<div class="info-icon">
+						<i class="fa fa-flag fa-4x" aria-hidden="true"></i>					
+					</div>
+					<h5 class="company-info-heading">Government</h5>
+					<p class="company-info-under-description">We are a Licensed Customers Brokerage House and offer Customs Clearance Nationwide. Contact us to find out how we can help your business with all your inbound Customs clearances in the USA.</p>
+				</div>
+				<div class="company-info-under-air company-info-width">
+					<div class="info-icon">
+						<i class="fa fa-plane fa-4x" aria-hidden="true"></i>					
+					</div>
+					<h5 class="company-info-heading">Air</h5>
+					<p class="company-info-under-description">As a TSA licensed corporation, we handle air freight around the globe, and have direct rate agreements with most major airlines.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="tracking" id="track">
+		<div class="container">
+			<h3 class="center">Container Tracking</h3>
+			<div class="carriers">
+				<div class="carrier-item">
+					<button id="hapag-btn">Hapag Lloyd</button>
+				</div>
+				<div class="carrier-item">
+					<button id="maersk-btn">Maersk</button>
+				</div>
+				<div class="carrier-item">
+					<button id="cma-btn">CMA CGM</button>
+				</div>
+				<div class="carrier-item">
+					<button id="safmarine-btn">Safmarine</button>
+				</div>
+				<div class="carrier-item">
+					<button id="msc-btn">MSC</button>
+				</div>
+				<div class="carrier-item">
+					<button id="evergreen-btn">Evergreen</button>
+				</div>
+			</div>
+			<h5>Instructions</h5>
+			<ul>
+				<li>Click on a carrier name which you want to track</li>
+				<li>Paste the <span class="container-number">container number</span> in the input and press enter or search</li>
+			</ul>
+			<div id="hapag" class="center container-tracking">
+				<p class="ct-item">You are trying to track a <span class="carrier-name">Hapag Lloyd</span> container</p>
+					<input type="text" placeholder="ABCDXXXXXXX" id='hapagCNT'>
+					<input type="button" class="button-primaryz" value="Search" id='hapagCNTBTN'>
+			</div>
+			<div id="maersk" class="center container-tracking">
+				<p class="ct-item">You are trying to track a <span class="carrier-name">Maersk</span> container</p>
+					<input type="text" placeholder="ABCDXXXXXXX" id='maerskCNT'>
+					<input type="button" class="button-primaryz" value="Search" id='maerskCNTBTN'>
+			</div>
+			<div id="cma" class="center container-tracking">
+				<p class="ct-item">You are trying to track a <span class="carrier-name">CMA-CGM</span> container</p>
+					<input type="text" placeholder="ABCDXXXXXXX" id='cmacgmCNT'>
+					<input type="button" class="button-primaryz" value="Search" id='cmaCNTBTN'>
+			</div>
+			<div id="safmarine" class="center container-tracking">
+				<p class="ct-item">You are trying to track a <span class="carrier-name">Safmarine</span> container</p>
+					<input type="text" placeholder="ABCDXXXXXXX" id='safmarineCNT'>
+					<input type="button" class="button-primaryz" value="Search" id='safmarineCNTBTN'>
+			</div>
+			<div id="msc" class="center container-tracking">
+				<p class="ct-item">You are trying to track a <span class="carrier-name">MSC</span> container</p>
+					<input type="text" placeholder="ABCDXXXXXXX" id='mscCNT'>
+					<input type="button" class="button-primaryz" value="Search" id='mscCNTBTN'>
+			</div>
+			<div id="evergreen" class="center container-tracking">
+				<p class="ct-item">You are trying to track a <span class="carrier-name">Evergreen</span> container</p>
+					<input type="text" placeholder="ABCDXXXXXXX" id='evergreenCNT'>
+					<input type="button" class="button-primaryz" value="Search" id='evergreenCNTBTN'>
+			</div>
+		</div>
+	</section>
+	<br>
+	<hr>
+	<br>
+	<section class="tracking" id="track">
+		<div class="container">
+			<h3 class="center">Air Tracking</h3>
+			<h5>How it works</h5>
+			<ul>
+				<li>Air cargo numbers have the format 123-12345678</li>
+				<li>We use the first 3 digits to automatically send the request to the correct airlines</li>
+				<li>Paste the <span class="container-number">MAWB</span> in the input and press enter or search</li>
+			</ul>
+			<div id="air-tracking" class="center container-tracking">
+				<p class="ct-item">Track your <span class="carrier-name">Air Shipment</span> here</p>
+					<input type="text" placeholder="ABC-XXXX XXXX" id='air-track'>
+					<input type="button" class="button-primaryz" value="Search" id='air-track-btn'>
+			</div>
+			<br>
+			<h5>Supporting Airlines</h5>
+			<div class="carriers carriers-air">
+				<div class="carrier-item">
+					<p class="carrier-air-name" id="hapag-btn">403 - Polar Air Cargo</p>
+				</div>
+				<div class="carrier-item">
+					<p class="carrier-air-name" id="maersk-btn">125 - IAG Cargo</p>
+				</div>
+				<div class="carrier-item">
+					<p class="carrier-air-name" id="cma-btn">057 / 074 - AFKL Cargo</p>
+				</div>
+				<div class="carrier-item">
+					<p class="carrier-air-name" id="safmarine-btn">180 - Korean Air Cargo</p>
+				</div>
+				<div class="carrier-item">
+					<p class="carrier-air-name" id="msc-btn">160 - Cathay Pacific Cargo</p>
+				</div>
+				<div class="carrier-item">
+					<p class="carrier-air-name" id="evergreen-btn">932 - Virgin Atlantic</p>
+				</div>
+				<div class="carrier-item">
+					<p class="carrier-air-name" id="hapag-btn">176 - Emirates Sky Cargo</p>
+				</div>
+				<div class="carrier-item">
+					<p class="carrier-air-name" id="maersk-btn">695 - EVA Air Cargo</p>
+				</div>
+				<div class="carrier-item">
+					<p class="carrier-air-name" id="cma-btn">157 - QATAR Airways</p>
+				</div>
+				<div class="carrier-item">
+					<p class="carrier-air-name" id="safmarine-btn">235 - Turkish Cargo</p>
+				</div>
+				<div class="carrier-item">
+					<p class="carrier-air-name" id="msc-btn">615 - Aviation Cargo</p>
+				</div>
+				<div class="carrier-item">
+					<p class="carrier-air-name" id="evergreen-btn">071 - Cargo Update</p>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<section class="downloads">
+		<div class="container">
+			<div class="downloads-header">
+				<h3>Downloads And Resources</h3>
+			</div>
+			<div class="row">
+				<div class="one-half column download-box">
+					<div class="download-box-contents">
+						<div class="download-box-left">
+							<div class="download-box-header">AMS - Automated Manifest System</div>
+							<div class="download-box-description">Click to download the file</div>
+						</div>
+						<div class="download-box-right">
+							<a href="files/AMS.pdf" download><i class="fa fa-arrow-circle-o-down fa-2x" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="one-half column download-box">
+					<div class="download-box-contents">
+						<div class="download-box-left">
+							<div class="download-box-header">ISF - Importer Security Filing</div>
+							<div class="download-box-description">Click to download the file</div>
+						</div>
+						<div class="download-box-right">
+							<a href="files/ISF.xls" download><i class="fa fa-arrow-circle-o-down fa-2x" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="margin: 35px 0;">
+				<div class="one-half column download-box">
+					<div class="download-box-contents">
+						<div class="download-box-left">
+							<div class="download-box-header">POA - Power Of Attorney</div>
+							<div class="download-box-description">Click to download the file</div>
+						</div>
+						<div class="download-box-right">
+							<a href="files/POA.pdf" download><i class="fa fa-arrow-circle-o-down fa-2x" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="one-half column download-box">
+					<div class="download-box-contents">
+						<div class="download-box-left">
+							<div class="download-box-header">Need Anything?</div>
+							<div class="download-box-description">Contact us for the resources</div>
+						</div>
+						<div class="download-box-right">
+							<a href="mailto:oceanimports@sssusainc.com?Subject=Download%20Request"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="download-info-box">
+					<div class="download-info-item download-info-item-left">
+						<h3>Get a free quote now</h3>
+						<p class="get-started-guide">Email or Call us - We'll get back to you within 24 hours</p>
+					</div>
+					<div class="download-info-item download-info-item-right">
+						<button class="get-started"><a href="get-started.html">Get Started</a></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="location">
+		<div class="container location-box">
+			<div class="location-left">
+				<div class="address-header">
+					<h3>Irvine, CA</h3><br>
+					<h3>United States</h3>
+					<hr class="separator">
+					<p>212 Technology Dr, Irvine, CA 92618, USA</p>
+				</div>				
+			</div>
+			<div class="location-right">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.602981460018!2d-117.75130008479509!3d33.66744768071235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdd457de609fd%3A0xb16745dea5b8da1c!2s212+Technology+Dr%2C+Irvine%2C+CA+92618%2C+USA!5e0!3m2!1sen!2sin!4v1564655231940!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>	
+		</div>		
+	</section>
+
+	<!-- <div class="temp"></div> -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-quote">The Safest Distance Between Two Points</div>
+			<div class="footer-container">
+				<div class="footer-feature">
+					<i class="fa fa-circle-o-notch fa-2x footer-icon-simplicity" aria-hidden="true"><span class="footer-feature-name">Simplicity</span></i>
+					<p class="footer-feature-description">Things being made beautifully simple are at the heart of everything we do.</p>
+				</div>
+				<div class="footer-feature">
+					<i class="fa fa-heart fa-2x footer-icon-social" aria-hidden="true"><span class="footer-feature-name">Social Good</span></i>
+					<p class="footer-feature-description">We believe in making things better for everyone, even if just by a little bit!</p>
+				</div>
+				<div class="footer-feature">
+					<i class="fa fa-shield fa-2x footer-icon-trust" aria-hidden="true"><span class="footer-feature-name">Trust</span></i>
+					<p class="footer-feature-description">We work on the basis of creating trust through authenticity and transparency.</p>
+				</div>
+			</div>
+			<div class="footer-redirect">
+				<div class="footer-redirect-left">
+					<p class="footer-question">Wanna make a shipment?</p>
+					<p class="footer-get-started">Lets get started!</p>
+				</div>
+				<div class="footer-redirect-right">
+					<button class="button-primary"><a href="get-started.html">Get Started</a></button>
+				</div>
+			</div>
+			<div class="footer-row">
+				<div class="footer-row-item">
+					<div class="footer-item-title">Copyright</div>
+					<div class="footer-item-sub">© 2k19</div>
+				</div>
+				<div class="footer-row-item">
+					<div class="footer-item-title">Company</div>
+					<div class="footer-item-sub">About Us</div>
+					<div class="footer-item-sub">Contact Us</div>
+				</div>
+				<div class="footer-row-item">
+					<div class="footer-item-title">Further Information</div>
+					<div class="footer-item-sub">Terms & Conditions</div>
+					<div class="footer-item-sub">Privacy Policy</div>
+				</div>
+				<div class="footer-row-item">
+					<div class="footer-item-title">Follow Us</div>
+					<div class="social-links">
+						<div class="social-link-items">
+							<i class="fa fa-facebook-square fa-lg social-icons" aria-hidden="true"></i>
+						</div>
+						<div class="social-link-items">
+							<i class="fa fa-twitter-square fa-lg social-icons" aria-hidden="true"></i>
+						</div>
+						<div class="social-link-items">
+							<i class="fa fa-linkedin-square fa-lg social-icons" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+				<div class="footer-row-item">
+					<div class="encloser">
+						<div class="encloser-icon">
+							<i class="fa fa-lock fa-2x" aria-hidden="true"></i>
+						</div>
+						<div class="encloser-text">
+							<div class="footer-item-title" style="padding: 0">CERTIFIED</div>
+							<div class="footer-item-sub">Freight Forwarders</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function(){
+			$('#hapag').hide();
+			$('#maersk').hide();
+			$('#cma').hide();
+			$('#safmarine').hide();
+			$('#msc').hide();
+			$('#evergreen').hide();
+
+			$('#hapag-btn').on('click',function(){
+				console.log('hapag');
+				$('#hapag').show();
+				$('#maersk').hide();
+				$('#cma').hide();
+				$('#safmarine').hide();
+				$('#msc').hide();
+				$('#evergreen').hide();
+			})
+			$('#maersk-btn').on('click',function(){
+				console.log('maersk');
+				$('#hapag').hide();
+				$('#maersk').show();
+				$('#cma').hide();
+				$('#safmarine').hide();
+				$('#msc').hide();
+				$('#evergreen').hide();
+			})
+			$('#cma-btn').on('click',function(){
+				console.log('cma');
+				$('#hapag').hide();
+				$('#maersk').hide();
+				$('#cma').show();
+				$('#safmarine').hide();
+				$('#msc').hide();
+				$('#evergreen').hide();
+			})
+			$('#safmarine-btn').on('click',function(){
+				console.log('safmarine');
+				$('#hapag').hide();
+				$('#maersk').hide();
+				$('#cma').hide();
+				$('#safmarine').show();
+				$('#msc').hide();
+				$('#evergreen').hide();
+			})
+			$('#msc-btn').on('click',function(){
+				console.log('msc');
+				$('#hapag').hide();
+				$('#maersk').hide();
+				$('#cma').hide();
+				$('#safmarine').hide();
+				$('#msc').show();
+				$('#evergreen').hide();
+			})
+			$('#evergreen-btn').on('click',function(){
+				console.log('evergreen');
+				$('#hapag').hide();
+				$('#maersk').hide();
+				$('#cma').hide();
+				$('#safmarine').hide();
+				$('#msc').hide();
+				$('#evergreen').show();
+			})
+
+		// TRACKING
+
+		var hapagCNT = document.getElementById("hapagCNT");
+		var maerskCNT = document.getElementById("maerskCNT");
+		var cmacgmCNT = document.getElementById("cmacgmCNT");
+		var safmarineCNT = document.getElementById("safmarineCNT");
+		var mscCNT = document.getElementById("mscCNT");
+		var evergreenCNT = document.getElementById("evergreenCNT");
+
+		var airTrack = document.getElementById("air-track");
+		var airTrackBtn = document.getElementById("air-track-btn");
+		airTrack.addEventListener("keydown", function (e) {
+			if(e.keyCode === 13) atrack(e);
+			console.log("Air Tracking");
+		});
+		airTrackBtn.addEventListener("click", function (e) {
+			console.log('Air Tracking Button')
+		});
+
+		function atrack(e) {
+		      var mawb = document.getElementById('air-track').value;
+		      let searchKeyword = mawb.toString().replace(/\s+/g, "").replace("-", "");
+		      console.log(searchKeyword);
+
+		      if (searchKeyword.length === 11) {
+		        let airSCAC = searchKeyword.slice(0, 3);
+		        let airBL = searchKeyword.slice(3, 11);
+		        if (airSCAC === "125") {
+		          let huntContainer = `https://www.iagcargo.com/iagcargo/portlet/en/html/601/main/search?awb.cia=${airSCAC}&awb.cod=${airBL}`;
+		          window.open(huntContainer.toString());
+		        } else if (airSCAC === "057") {
+		          let huntContainer = `https://www.afklcargo.com/WW/en/local/app/index.jsp#/tntdetails/${airSCAC}-${airBL}`;
+		          window.open(huntContainer.toString());
+		        } else if (airSCAC === "403") {
+		          let huntContainer = `http://www.polaraircargo.com/TrackAndTraceUI/WebForm1.aspx?pe=${airSCAC}&se=${airBL}`;
+		          window.open(huntContainer.toString());
+		        } else if (airSCAC === "074") {
+		          let huntContainer = `https://www.afklcargo.com/WW/en/local/app/index.jsp#/tntdetails/${airSCAC}-${airBL}`;
+		          window.open(huntContainer.toString());
+		        } else if (airSCAC === "160") {
+		          let huntContainer = `https://www.cathaypacificcargo.com/ManageYourShipment/TrackYourShipment/tabid/108/SingleAWBNo/${airSCAC}-${airBL}/language/en-US/Default.aspx`;
+		          window.open(huntContainer.toString());
+		        } else if (airSCAC === "932") {
+		          let huntContainer = `https://cargo.virgin-atlantic.com/gb/en/track/track-your-cargo.html?prefix=${airSCAC}&number=${airBL}&track=go`;
+		          window.open(huntContainer.toString());
+		        } else if (airSCAC === "618") {
+		          console.log("Comp works " + airSCAC);
+		        } else if (airSCAC === "837") {
+		          console.log("Comp works " + airSCAC);
+		        } else if (airSCAC === "176") {
+		          console.log("Comp works " + airSCAC);
+		          // https://skychain.emirates.com/skychain/app?PID=WEB01-10&doc_typ=AWB&awb_pre=${airSCAC}&awb_no=${airBL}
+		          let huntContainer = `https://skychain.emirates.com/skychain/app?PID=WEB01-10&doc_typ=AWB&awb_pre=${airSCAC}&awb_no=${airBL}`;
+		          window.open(huntContainer.toString());
+		        } else if (airSCAC === "695") {
+		          let huntContainer = `https://www.brcargo.com/ec_web/Default.aspx?Parm2=191&Parm3=?TNT_FLAG=Y&AWB_CODE=${airSCAC}&MAWB_NUMBER=${airBL}`;
+		          window.open(huntContainer.toString());
+		        } else if (airSCAC === "157") {
+		          let huntContainer = `https://www.brcargo.com/ec_web/Default.aspx?Parm2=191&Parm3=?TNT_FLAG=Y&AWB_CODE=${airSCAC}&MAWB_NUMBER=${airBL}`;
+		          window.open(huntContainer.toString());
+		        } else if (airSCAC === "406") {
+		          console.log("Comp works " + airSCAC);
+		        } else if (airSCAC === "417") {
+		          console.log("Comp works " + airSCAC);
+		        } else if (airSCAC === "098") {
+		          console.log("Comp works " + airSCAC);
+		        } else if (airSCAC === "235") {
+		          console.log("Comp works " + airSCAC);
+		          // https://www.turkishcargo.com.tr/en/online-services/shipment-tracking?quick=True&awbInput=235-38623933
+		          let huntContainer = `https://www.turkishcargo.com.tr/en/online-services/shipment-tracking?quick=True&awbInput=${airSCAC}-${airBL}`;
+		          window.open(huntContainer.toString());
+		        } else if (airSCAC === "580") {
+		          console.log("Comp works " + airSCAC);
+		        } else if (airSCAC === "615") {
+		        	// https://aviationcargo.dhl.com/aviationcargo/track/61525074416
+		        	let huntContainer = `https://aviationcargo.dhl.com/aviationcargo/track/${airSCAC}${airBL}`;
+		          window.open(huntContainer.toString());
+		          console.log("Comp works " + airSCAC);
+		        } else if (airSCAC === "071") {
+		        	let huntContainer = `https://www.cargoupdate.com/tracktrace/default.aspx?carrier=ET&awbs=${airSCAC}-${airBL}`;
+		          	window.open(huntContainer.toString());
+		        	// https://www.cargoupdate.com/tracktrace/default.aspx?carrier=ET&awbs=${airSCAC}-${airBL}
+		          console.log("Comp works " + airSCAC);
+		        } else if (airSCAC === "180") {
+		        	// https://cargo.koreanair.com/en/tracking?awbNO=18042419926
+		        	let huntContainer = `https://cargo.koreanair.com/en/tracking?awbNO=${airSCAC}${airBL}`;
+		          	window.open(huntContainer.toString());
+		          console.log("Comp works " + airSCAC);
+		        } else if (airSCAC === "724") {
+		          console.log("Comp works " + airSCAC);
+		        } else if (airSCAC === "695") {
+		          console.log("Comp works " + airSCAC);
+		        }
+		      }
+		}
+
+
+		hapagCNT.addEventListener("keydown", function (e) {
+			if(e.keyCode === 13) htrack(e);
+		});
+		hapagCNTBTN.addEventListener("click", function (e) {
+			htrack(e);
+		});
+		maerskCNT.addEventListener("keydown", function (e) {
+			if(e.keyCode === 13) mtrack(e);
+		});
+		maerskCNTBTN.addEventListener("click", function (e) {
+			mtrack(e);
+		});
+		cmacgmCNT.addEventListener("keydown", function (e) {
+			if(e.keyCode === 13) ctrack(e);
+		});
+		cmaCNTBTN.addEventListener("click", function (e) {
+			ctrack(e);
+		});
+		safmarineCNT.addEventListener("keydown", function (e) {
+			if(e.keyCode === 13) strack(e);
+		});
+		safmarineCNTBTN.addEventListener("click", function (e) {
+			strack(e);
+		});
+		mscCNT.addEventListener("keydown", function (e) {
+			if(e.keyCode === 13) msctrack(e);
+		});
+		mscCNTBTN.addEventListener("click", function (e) {
+			msctrack(e);
+		});
+		evergreenCNT.addEventListener("keydown", function (e) {
+			if(e.keyCode === 13) etrack(e);
+		});
+		evergreenCNTBTN.addEventListener("click", function (e) {
+			etrack(e);
+		});
+
+		function htrack(e) {
+		      var string1 = "https://www.hapag-lloyd.com/en/online-business/tracing/tracing-by-container.html?container="
+		      var string2 = document.getElementById('hapagCNT').value;
+		      var string3 = string1 + string2;
+		      window.open(string3);
+		}
+		function mtrack(e) {
+		      var string1 = "https://www.maersk.com/tracking/#tracking/"
+		      var string2 = document.getElementById('maerskCNT').value;
+		      var string3 = string1 + string2;
+		      window.open(string3);
+		}
+		function ctrack(e) {
+		      var string1 = "https://www.cma-cgm.com/ebusiness/tracking/search?SearchBy=Container&Reference="
+		      var string2 = document.getElementById('cmacgmCNT').value;
+		      var string3 = string1 + string2;
+		      window.open(string3);
+		}
+		function strack(e) {
+		      var string1 = "https://my.safmarine.com/tracking/#tracking?"
+		      var string2 = document.getElementById('safmarineCNT').value;
+		      var string3 = string1 + string2;
+		      window.open(string3);
+		}
+		function msctrack(e) {
+		      var string1 = "http://www.shippingline.org/track/?container="
+		      var string2 = document.getElementById('mscCNT').value;
+		      var string3 = string1 + string2;
+		      var string4 = string3 + "&type=container&line=msc";
+		      window.open(string4);
+		}
+		function etrack(e) {
+		      var string1 = "http://www.shippingline.org/track/?container="
+		      var string2 = document.getElementById('evergreenCNT').value;
+		      var string3 = string1 + string2;
+		      var string4 = string3 + "&type=container&line=evergreen";
+		      window.open(string4);
+		}
+
+		});
+	</script>
+</body>
+</html>
