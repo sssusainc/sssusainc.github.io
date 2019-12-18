@@ -36,6 +36,13 @@ const render = data => {
 
 	g.selectAll('rect').data(data)
 		.enter().append('rect')
+			.attr('fill', d => {
+				if(d.shipments >= 100){
+					return 'seagreen'
+				} else {
+					return '#34495e'
+				}
+			})
 			.attr('y', d => yScale(yValue(d)))
 			.attr('width', d => xScale(xValue(d)))
 			.attr('height', yScale.bandwidth());
@@ -60,26 +67,6 @@ d3.csv('data.csv').then(data => data.forEach(d => {
 	d3.select('.shipment-count').text(countInfo + dataCount)
 		.style('color', 'steelblue')
 		.style('font-size', '1.2em');
-}));
-
-
-let i = 0;
-
-d3.csv('data.csv').then(data => data.forEach(d => {
-	const totalShipments = +d.shipments;
-	const percent = Number((((totalShipments / dataCount) * 100).toFixed(2)).toString());
-
-	d3.select('.agents-list').append('button')
-		.text(`${d.agent} : ${percent}%`)
-		.style('width', '250px')
-		.style('background-color', colorBox[i])
-		.style('color', '#eee')
-		.style('font-size', '15px')
-		.style('border', 'none')
-		.style('outline', 'none')
-		.style('text-align', 'left')
-		.style('padding', '20px 10px');
-		i++;
 }));
 
 // Pie Chart
@@ -121,5 +108,23 @@ d3.csv('data.csv').then(data => data.forEach(d => {
 	g2.append('path')
 			.attr('d', arc)
 			.style('fill', d => color(d.data.agent));
+}));
 
+let i = 0;
+
+d3.csv('data.csv').then(data => data.forEach(d => {
+	const totalShipments = +d.shipments;
+	const percent = Number((((totalShipments / dataCount) * 100).toFixed(2)).toString());
+
+	d3.select('.agents-list').append('button')
+		.text(`${d.agent} : ${percent}%`)
+		.style('width', '250px')
+		.style('background-color', colorBox[i])
+		.style('color', '#eee')
+		.style('font-size', '15px')
+		.style('border', 'none')
+		.style('outline', 'none')
+		.style('text-align', 'left')
+		.style('padding', '20px 10px');
+		i++;
 }));
