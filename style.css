@@ -1210,8 +1210,9 @@ figure img {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	margin: 70px 0;
+	flex-wrap: wrap;
 }
 
 .carriers button {

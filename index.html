@@ -93,6 +93,9 @@
 					<button id="cma-btn">CMA CGM</button>
 				</div>
 				<div class="carrier-item">
+					<button id="apl-btn">APL</button>
+				</div>
+				<div class="carrier-item">
 					<button id="safmarine-btn">Safmarine</button>
 				</div>
 				<div class="carrier-item">
@@ -121,6 +124,11 @@
 				<p class="ct-item">You are trying to track a <span class="carrier-name">CMA-CGM</span> container</p>
 					<input type="text" placeholder="ABCDXXXXXXX" id='cmacgmCNT'>
 					<input type="button" class="button-primaryz" value="Search" id='cmaCNTBTN'>
+			</div>
+			<div id="apl" class="center container-tracking">
+				<p class="ct-item">You are trying to track a <span class="carrier-name">APL</span> container</p>
+					<input type="text" placeholder="ABCDXXXXXXX" id='aplCNT'>
+					<input type="button" class="button-primaryz" value="Search" id='aplCNTBTN'>
 			</div>
 			<div id="safmarine" class="center container-tracking">
 				<p class="ct-item">You are trying to track a <span class="carrier-name">Safmarine</span> container</p>
@@ -366,6 +374,7 @@
 			$('#safmarine').hide();
 			$('#msc').hide();
 			$('#evergreen').hide();
+			$('#apl').hide();
 
 			$('#hapag-btn').on('click',function(){
 				console.log('hapag');
@@ -374,6 +383,7 @@
 				$('#cma').hide();
 				$('#safmarine').hide();
 				$('#msc').hide();
+				$('#apl').hide();
 				$('#evergreen').hide();
 			})
 			$('#maersk-btn').on('click',function(){
@@ -384,6 +394,7 @@
 				$('#safmarine').hide();
 				$('#msc').hide();
 				$('#evergreen').hide();
+				$('#apl').hide();
 			})
 			$('#cma-btn').on('click',function(){
 				console.log('cma');
@@ -391,6 +402,7 @@
 				$('#maersk').hide();
 				$('#cma').show();
 				$('#safmarine').hide();
+				$('#apl').hide();
 				$('#msc').hide();
 				$('#evergreen').hide();
 			})
@@ -401,6 +413,7 @@
 				$('#cma').hide();
 				$('#safmarine').show();
 				$('#msc').hide();
+				$('#apl').hide();
 				$('#evergreen').hide();
 			})
 			$('#msc-btn').on('click',function(){
@@ -409,6 +422,7 @@
 				$('#maersk').hide();
 				$('#cma').hide();
 				$('#safmarine').hide();
+				$('#apl').hide();
 				$('#msc').show();
 				$('#evergreen').hide();
 			})
@@ -418,8 +432,20 @@
 				$('#maersk').hide();
 				$('#cma').hide();
 				$('#safmarine').hide();
+				$('#apl').hide();
 				$('#msc').hide();
 				$('#evergreen').show();
+			})
+
+			$('#apl-btn').on('click',function(){
+				console.log('apl');
+				$('#hapag').hide();
+				$('#maersk').hide();
+				$('#cma').hide();
+				$('#safmarine').hide();
+				$('#apl').hide();
+				$('#msc').hide();
+				$('#apl').show();
 			})
 
 		// TRACKING
@@ -427,6 +453,7 @@
 		var hapagCNT = document.getElementById("hapagCNT");
 		var maerskCNT = document.getElementById("maerskCNT");
 		var cmacgmCNT = document.getElementById("cmacgmCNT");
+		var aplCNT = document.getElementById("aplCNT");
 		var safmarineCNT = document.getElementById("safmarineCNT");
 		var mscCNT = document.getElementById("mscCNT");
 		var evergreenCNT = document.getElementById("evergreenCNT");
@@ -537,6 +564,12 @@
 		cmaCNTBTN.addEventListener("click", function (e) {
 			ctrack(e);
 		});
+		aplCNT.addEventListener("keydown", function (e) {
+			if(e.keyCode === 13) apltrack(e);
+		});
+		aplCNTBTN.addEventListener("click", function (e) {
+			apltrack(e);
+		});
 		safmarineCNT.addEventListener("keydown", function (e) {
 			if(e.keyCode === 13) strack(e);
 		});
@@ -565,6 +598,12 @@
 		function mtrack(e) {
 		      var string1 = "https://www.maersk.com/tracking/#tracking/"
 		      var string2 = document.getElementById('maerskCNT').value;
+		      var string3 = string1 + string2;
+		      window.open(string3);
+		}
+		function apltrack(e) {
+		      var string1 = "https://www.apl.com/ebusiness/tracking/search?SearchBy=Container&Reference="
+		      var string2 = document.getElementById('aplCNT').value;
 		      var string3 = string1 + string2;
 		      window.open(string3);
 		}
