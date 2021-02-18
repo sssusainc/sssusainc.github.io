@@ -1,141 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Getting Started | Seven Seas Shipping USA Inc</title>
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="style.css"></head>
-<body class="about-bg">
-	<div class="responsive-bypass">
-		<p>Please access the site in desktop mode</p>
-	</div>
-	<div class="navigation">
-		<div class="nav-content">
-			<div class="logo-box">
-				<img src="img/logo_nav.png" alt="Logo">
-				<p>Seven Seas Shipping USA Inc</p>
-			</div>
-			<div class="nav-menu">
-				<div class="menu-item"><a href="index.html">Home</a></div>
-				<div class="menu-item"><a href="services.html">Services</a></div>
-				<div class="menu-item"><a href="about.html">About Us</a></div>
-				<div class="menu-item"><a href="get-started.html">Get Started</a></div>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Getting Started | Seven Seas Shipping USA Inc</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body class="about-bg">
+		<div class="responsive-bypass">
+			<p>Please access the site in desktop mode</p>
+		</div>
+		<div class="navigation">
+			<div class="nav-content">
+				<div class="logo-box">
+					<img src="img/logo_nav.png" alt="Logo" />
+					<p>Seven Seas Shipping USA Inc</p>
+				</div>
+				<div class="nav-menu">
+					<div class="menu-item"><a href="index.html">Home</a></div>
+					<div class="menu-item">
+						<a href="services.html">Services</a>
+					</div>
+					<div class="menu-item">
+						<a href="about.html">About Us</a>
+					</div>
+					<div class="menu-item">
+						<a href="get-started.html">Get Started</a>
+					</div>
+					<div class="menu-item">
+						<a href="#popup">Recruitment</a>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-		
-	<section class="getting-started">
+
+		<section class="getting-started">
 			<div class="gs-box">
 				<div class="gsb-left">
 					<h3>Will get back to you within 24 hours</h3>
 					<h5>Email or Call us</h5>
-					<form action='https://formspree.io/oceanimports@sssusainc.com' method='POST'>
-						<input type="text" name="general_name" id="name" class="u-full-width" placeholder="Name" required>
+					<form
+						action="https://formspree.io/oceanimports@sssusainc.com"
+						method="POST"
+					>
+						<input
+							type="text"
+							name="general_name"
+							id="name"
+							class="u-full-width"
+							placeholder="Name"
+							required
+						/>
 						<div class="u-full-width form-line">
-							<input type="email" name="general_email" id="email" class="u-full-width form-item" placeholder="Email" required>
-							<input type="number" name="general_phone" id="phone" class="u-full-width form-item" placeholder="Phone Number" required>
+							<input
+								type="email"
+								name="general_email"
+								id="email"
+								class="u-full-width form-item"
+								placeholder="Email"
+								required
+							/>
+							<input
+								type="number"
+								name="general_phone"
+								id="phone"
+								class="u-full-width form-item"
+								placeholder="Phone Number"
+								required
+							/>
 						</div>
 						<div class="u-full-width form-line">
-							<select name="general_query" id="query" class="u-full-width" style="width: 48%;" required>
-								<option value="Please Select">Please Select</option>
+							<select
+								name="general_query"
+								id="query"
+								class="u-full-width"
+								style="width: 48%;"
+								required
+							>
+								<option value="Please Select"
+									>Please Select</option
+								>
 								<option value="Rate Quote">Rate Quote</option>
 								<option value="Inquiry">Inquiry</option>
-								<option value="General Information">General Information</option>
+								<option value="General Information"
+									>General Information</option
+								>
 							</select>
-							<select name="general_modeOfTrans" id="query" class="u-full-width" style="width: 48%;" required>
-								<option value="Please Select">Please Select</option>
-								<option value="Ocean Freight">Ocean Freight</option>
+							<select
+								name="general_modeOfTrans"
+								id="query"
+								class="u-full-width"
+								style="width: 48%;"
+								required
+							>
+								<option value="Please Select"
+									>Please Select</option
+								>
+								<option value="Ocean Freight"
+									>Ocean Freight</option
+								>
 								<option value="Air Freight">Air Freight</option>
-								<option value="Custom Clearance">Custom Clearance</option>
-								<option value="Domestic Trucking">Domestic Trucking</option>
-							</select>	
+								<option value="Custom Clearance"
+									>Custom Clearance</option
+								>
+								<option value="Domestic Trucking"
+									>Domestic Trucking</option
+								>
+							</select>
 						</div>
-						<textarea placeholder="Your message goes here...." name="general_message" id="message" class="u-full-width" style="resize: none;" required></textarea>
+						<textarea
+							placeholder="Your message goes here...."
+							name="general_message"
+							id="message"
+							class="u-full-width"
+							style="resize: none;"
+							required
+						></textarea>
 						<div class="center">
-							<input type="submit" value="Submit" class="get-started color-primary">
+							<input
+								type="submit"
+								value="Submit"
+								class="get-started color-primary"
+							/>
 						</div>
 					</form>
 				</div>
-				<div class="gsb-right">
-					
-				</div>
+				<div class="gsb-right"></div>
 			</div>
-	</section>
+		</section>
 
-	<!-- <div class="temp"></div> -->
-	<!-- <div class="temp"></div> -->
+		<!-- <div class="temp"></div> -->
+		<!-- <div class="temp"></div> -->
 
-
-	<footer class="footer">
-		<div class="container">
-			<div class="footer-quote">The Safest Distance Between Two Points</div>
-			<div class="footer-container">
-				<div class="footer-feature">
-					<i class="fa fa-circle-o-notch fa-2x footer-icon-simplicity" aria-hidden="true"><span class="footer-feature-name">Simplicity</span></i>
-					<p class="footer-feature-description">Things being made beautifully simple are at the heart of everything we do.</p>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-quote">
+					The Safest Distance Between Two Points
 				</div>
-				<div class="footer-feature">
-					<i class="fa fa-heart fa-2x footer-icon-social" aria-hidden="true"><span class="footer-feature-name">Social Good</span></i>
-					<p class="footer-feature-description">We believe in making things better for everyone, even if just by a little bit!</p>
+				<div class="footer-container">
+					<div class="footer-feature">
+						<i
+							class="fa fa-circle-o-notch fa-2x footer-icon-simplicity"
+							aria-hidden="true"
+							><span class="footer-feature-name"
+								>Simplicity</span
+							></i
+						>
+						<p class="footer-feature-description">
+							Things being made beautifully simple are at the
+							heart of everything we do.
+						</p>
+					</div>
+					<div class="footer-feature">
+						<i
+							class="fa fa-heart fa-2x footer-icon-social"
+							aria-hidden="true"
+							><span class="footer-feature-name"
+								>Social Good</span
+							></i
+						>
+						<p class="footer-feature-description">
+							We believe in making things better for everyone,
+							even if just by a little bit!
+						</p>
+					</div>
+					<div class="footer-feature">
+						<i
+							class="fa fa-shield fa-2x footer-icon-trust"
+							aria-hidden="true"
+							><span class="footer-feature-name">Trust</span></i
+						>
+						<p class="footer-feature-description">
+							We work on the basis of creating trust through
+							authenticity and transparency.
+						</p>
+					</div>
 				</div>
-				<div class="footer-feature">
-					<i class="fa fa-shield fa-2x footer-icon-trust" aria-hidden="true"><span class="footer-feature-name">Trust</span></i>
-					<p class="footer-feature-description">We work on the basis of creating trust through authenticity and transparency.</p>
+				<div class="footer-redirect">
+					<div class="footer-redirect-left">
+						<p class="footer-question">Wanna make a shipment?</p>
+						<p class="footer-get-started">Lets get started!</p>
+					</div>
+					<div class="footer-redirect-right">
+						<button class="button-primary">
+							<a href="get-started.html">Get Started</a>
+						</button>
+					</div>
 				</div>
-			</div>
-			<div class="footer-redirect">
-				<div class="footer-redirect-left">
-					<p class="footer-question">Wanna make a shipment?</p>
-					<p class="footer-get-started">Lets get started!</p>
-				</div>
-				<div class="footer-redirect-right">
-					<button class="button-primary"><a href="get-started.html">Get Started</a></button>
-				</div>
-			</div>
-			<div class="footer-row">
-				<div class="footer-row-item">
-					<div class="footer-item-title">Copyright</div>
-					<div class="footer-item-sub">© 2k19</div>
-				</div>
-				<div class="footer-row-item">
-					<div class="footer-item-title">Company</div>
-					<div class="footer-item-sub">About Us</div>
-					<div class="footer-item-sub">Contact Us</div>
-				</div>
-				<div class="footer-row-item">
-					<div class="footer-item-title">Further Information</div>
-					<div class="footer-item-sub">Terms & Conditions</div>
-					<div class="footer-item-sub">Privacy Policy</div>
-				</div>
-				<div class="footer-row-item">
-					<div class="footer-item-title">Follow Us</div>
-					<div class="social-links">
-						<div class="social-link-items">
-							<i class="fa fa-facebook-square fa-lg social-icons" aria-hidden="true"></i>
+				<div class="footer-row">
+					<div class="footer-row-item">
+						<div class="footer-item-title">Copyright</div>
+						<div class="footer-item-sub">© 2k19</div>
+					</div>
+					<div class="footer-row-item">
+						<div class="footer-item-title">Company</div>
+						<div class="footer-item-sub">About Us</div>
+						<div class="footer-item-sub">Contact Us</div>
+					</div>
+					<div class="footer-row-item">
+						<div class="footer-item-title">Further Information</div>
+						<div class="footer-item-sub">Terms & Conditions</div>
+						<div class="footer-item-sub">Privacy Policy</div>
+					</div>
+					<div class="footer-row-item">
+						<div class="footer-item-title">Follow Us</div>
+						<div class="social-links">
+							<div class="social-link-items">
+								<i
+									class="fa fa-facebook-square fa-lg social-icons"
+									aria-hidden="true"
+								></i>
+							</div>
+							<div class="social-link-items">
+								<i
+									class="fa fa-twitter-square fa-lg social-icons"
+									aria-hidden="true"
+								></i>
+							</div>
+							<div class="social-link-items">
+								<i
+									class="fa fa-linkedin-square fa-lg social-icons"
+									aria-hidden="true"
+								></i>
+							</div>
 						</div>
-						<div class="social-link-items">
-							<i class="fa fa-twitter-square fa-lg social-icons" aria-hidden="true"></i>
-						</div>
-						<div class="social-link-items">
-							<i class="fa fa-linkedin-square fa-lg social-icons" aria-hidden="true"></i>
+					</div>
+					<div class="footer-row-item">
+						<div class="encloser">
+							<div class="encloser-icon">
+								<i
+									class="fa fa-lock fa-2x"
+									aria-hidden="true"
+								></i>
+							</div>
+							<div class="encloser-text">
+								<div
+									class="footer-item-title"
+									style="padding: 0"
+								>
+									CERTIFIED
+								</div>
+								<div class="footer-item-sub">
+									Freight Forwarders
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="footer-row-item">
-					<div class="encloser">
-						<div class="encloser-icon">
-							<i class="fa fa-lock fa-2x" aria-hidden="true"></i>
-						</div>
-						<div class="encloser-text">
-							<div class="footer-item-title" style="padding: 0">CERTIFIED</div>
-							<div class="footer-item-sub">Freight Forwarders</div>	
-						</div>
-					</div>
+			</div>
+		</footer>
+		<div class="popup" id="popup">
+			<div class="popup__content">
+				<div class="popup__right">
+					<a href="#section-tours" class="popup__close">&times;</a>
+					<h2 class="heading-secondary u-margin-bottom-small">
+						Recruitment
+					</h2>
+					<!-- 				<h3
+					class="heading-tertiary heading-tertiary--contact u-margin-bottom-small"
+				>
+					EMAIL &ndash; vignesh@praashshipping.com
+				</h3> -->
+					<p class="popup__text">
+						Please note, no positions available for hiring at this
+						time.
+					</p>
+					<a href="#" class="btn btn--green">Back</a>
 				</div>
 			</div>
 		</div>
-	</footer>
-</body>
+	</body>
 </html>
